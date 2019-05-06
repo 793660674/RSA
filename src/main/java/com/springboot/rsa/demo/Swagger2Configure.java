@@ -22,7 +22,7 @@ public class Swagger2Configure {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.com.springboot.rsa.demo"))
+                .apis(RequestHandlerSelectors.basePackage("com.springboot.rsa.demo"))
                 .paths(PathSelectors.any())
                 .build();
     }
